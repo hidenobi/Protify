@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Protify</string>
+    <string name="logo">Spotify logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in for Spotify</string>
+    <string name="sign_up">Sign up for Spotify</string>
+    <string name="login">Log In</string>
+    <string name="forgotPassword">Forgot your password?</string>
+    <string name="text">Don\'t have an account? </string>
+    <string name="label_sign_up">Sign up for Spotify </string>
+    <string name="register">Register </string>
+    <string name="email">Email </string>
+    <string name="confirm_password">Confirm Password </string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="required">Required</string>
+    <string name="password_error">At least 8 character! </string>
+    <string name="confirm_password_error">Confirm password does not match! </string>
+    <string name="fill_all_the_form">Please fill all the form</string>
+    <string name="in_valid_email">InvalidEmail</string>
+
 </resources>
