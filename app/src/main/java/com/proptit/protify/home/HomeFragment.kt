@@ -10,6 +10,9 @@ import androidx.core.widget.doBeforeTextChanged
 import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.proptit.protify.constant.APIHOST
+import com.proptit.protify.constant.APIKEY
+
 import com.proptit.protify.databinding.FragmentHomeBinding
 import com.proptit.protify.extensions.hide
 import com.proptit.protify.extensions.show
@@ -21,8 +24,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-const val apiKey = ""
-const val apiHost = ""
+
 class HomeFragment : Fragment() {
     private lateinit var binding:FragmentHomeBinding
     private lateinit var recyclerView: RecyclerView
@@ -60,7 +62,7 @@ class HomeFragment : Fragment() {
     private fun getListMusic() {
         binding.progressBar.show()
         binding.recyclerview.hide()
-        val call = ApiClient.apiService.getListMusic("eminem",apiKey, apiHost)
+        val call = ApiClient.apiService.getListMusic("eminem", APIKEY, APIHOST)
         call.enqueue(object : Callback<Data> {
             override fun onResponse(call: Call<Data>, response: Response<Data>) {
                 if (response.isSuccessful) {

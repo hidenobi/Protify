@@ -98,6 +98,7 @@ class LoginFragment : Fragment() {
         binding.loginButton.hide()
         Toast.makeText(context, email + password, Toast.LENGTH_SHORT).show()
 
+        findNavController().navigate(R.id.homeFragment)
         val call = ApiClient.apiService.login(email,password)
         call.enqueue(object : Callback<LoginResponse>{
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
