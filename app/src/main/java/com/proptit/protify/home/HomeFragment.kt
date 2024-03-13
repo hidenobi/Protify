@@ -21,8 +21,8 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-const val apiKey = "7dbda338b3mshd4c04fe2cf93bb9p186dbajsn6d98d3062ca3"
-const val apiHost = "deezerdevs-deezer.p.rapidapi.com"
+const val apiKey = ""
+const val apiHost = ""
 class HomeFragment : Fragment() {
     private lateinit var binding:FragmentHomeBinding
     private lateinit var recyclerView: RecyclerView
