@@ -10,8 +10,6 @@ import androidx.core.widget.doBeforeTextChanged
 import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.proptit.protify.constant.APIHOST
-import com.proptit.protify.constant.APIKEY
 
 import com.proptit.protify.databinding.FragmentHomeBinding
 import com.proptit.protify.extensions.hide
@@ -62,7 +60,7 @@ class HomeFragment : Fragment() {
     private fun getListMusic() {
         binding.progressBar.show()
         binding.recyclerview.hide()
-        val call = ApiClient.apiService.getListMusic("eminem", APIKEY, APIHOST)
+        val call = ApiClient.apiService.getListMusic("eminem", "APIKEY", "APIHOST")
         call.enqueue(object : Callback<Data> {
             override fun onResponse(call: Call<Data>, response: Response<Data>) {
                 if (response.isSuccessful) {
